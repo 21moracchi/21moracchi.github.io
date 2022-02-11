@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  grid-template-areas: 
+    "photo header"
+    "columns education "
+    "columns association"
+    ;
+  grid-template-rows: 1fr 1fr 1fr;
+  }
+
+.photo {grid-area: photo}
+.header {
+    grid-area: header;
+    ;
+}
+
+.column {
+    grid-area: columns;
+    ;
+}
+.education {
+    grid-area: education;
+    ;
+}
+
+.association {grid-area : association ; }
+
+.category {
+      
+ 
+    color: black;
+    font-size: xx-large;
+    justify-self: center
+  }
+.title {font-size : xx-large;
+    justify-self: center}
