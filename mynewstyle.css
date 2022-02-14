@@ -1,37 +1,58 @@
 .container {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-  grid-template-areas: 
-    "photo header"
-    "columns education "
-    "columns association"
-    ;
-  grid-template-rows: 1fr 1fr 1fr;
-  }
+  display: grid;
+  grid-template-columns: 300px 1fr 4fr 1fr;
+  grid-template-areas:
+    "photo blank1 header blank2"
+    "columns blank1 education blank2 "
+    "columns blank1 association blank2"
+    "columns blank1 competences blank2"
+  ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.blank {grid-area: blank1;}
+.photo {
+  grid-area: photo;
+  background-color: rgb(176, 172, 172);
+   ;
+  
+}
 
-.photo {grid-area: photo}
+.competences { grid-area : competences ;}
 .header {
-    grid-area: header;
-    ;
+  grid-area: header;
+  background-color: rgb(176, 172, 172));
+  margin : auto ;
 }
 
 .column {
-    grid-area: columns;
-    ;
-}
-.education {
-    grid-area: education;
-    ;
+  grid-area: columns;
+  background-color: rgb(176, 172, 172);
 }
 
-.association {grid-area : association ; }
+.education {
+  grid-area: education;
+  
+}
+
+.association {
+  grid-area: association;
+}
 
 .category {
-      
- 
-    color: black;
-    font-size: xx-large;
-    justify-self: center
-  }
-.title {font-size : xx-large;
-    justify-self: center}
+
+
+  color: #000000;
+  font-size: xx-large;
+   
+}
+
+.title {
+  font-size: xx-large;
+   
+}
+
+.aligned_content {text-align: center ;}
+
+.first_bullet{ color : rgb(94, 0, 0); font-size : large}
+
+li li{ color : rgb(84, 84, 84); font-size : medium}
